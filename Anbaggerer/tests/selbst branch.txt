@@ -1,0 +1,84 @@
+Hier ein Set von realistischen Gesprächs-Antworten für die Selbst-Branch, nur mit den Formulierungen, die der Angerufene sagt. Nutze diese für Testanrufe, um den Bot zu prüfen und Schwachstellen zu entdecken.
+
+⸻
+
+1. Auf die Einstiegsfrage:
+
+„Guten Tag, mein Name ist Lisa von Der Anbaggerer. Ich würde gerne kurz erfahren, wie Sie derzeit Ihre Erdarbeiten organisieren.“
+
+Varianten:
+	1.	„Wir machen das alles inhouse mit unserem Minibagger und eigenem Team.“
+	2.	„Normalerweise greifen wir auf einen festen Subunternehmer zurück.“
+	3.	„Das läuft ganz klassisch: Wir haben einen Minibagger und schieben’s selbst.“
+	4.	„Ehrlich gesagt, haben wir da gerade keine feste Lösung und improvisieren je nach Auftrag.“
+	5.	„Ich weiß nicht, wo Sie da anrufen – wir haben bisher keine externen Baggerdienste genutzt.“
+
+⸻
+
+2. Auf die Nachfrage zu Maschinen/Kapazitäten:
+
+„Welche Maschinen und Kapazitäten setzen Sie dafür aktuell ein?“
+
+Varianten:
+	1.	„Wir haben einen 2-Tonnen-Bagger und einen kleinen Radlader, das war’s.“
+	2.	„Nur einen Minibagger und manuell mit Schaufel, wenn’s sein muss.“
+	3.	„Aktuell gar nichts, wir warten gerade auf neue Geräte.“
+	4.	„Zwei Mini- und einen Standardbagger, aber oft fehlt uns das Personal dazu.“
+	5.	„Keinen einzigen – wir gucken immer, wer gerade was frei hat.“
+
+⸻
+
+3. Auf die Frage nach Engpässen:
+
+„Gibt es Phasen, in denen Sie Engpässe oder Verzögerungen erleben?“
+
+Varianten:
+	1.	„Ja, vor allem im Frühjahr, wenn’s überall losgeht.“
+	2.	„Bislang zum Glück nicht, wir kommen meistens klar.“
+	3.	„Immer mal wieder, speziell wenn wir mehrere Baustellen gleichzeitig haben.“
+	4.	„Das ist eigentlich dauernd ein Thema – wir haben zu wenig Kapazitäten.“
+	5.	„Nein, wir haben einen Puffer eingeplant und sind ganz entspannt.“
+
+⸻
+
+4. Auf die Häufigkeit externer Unterstützung:
+
+„Wie oft kommt es vor, dass Sie externe Unterstützung benötigen würden, aber nicht schnell genug fündig werden?“
+
+Varianten:
+	1.	„Vielleicht zwei- bis dreimal im Monat, wenn’s richtig eng wird.“
+	2.	„Kaum jemals – wir organisieren’s über unsere Subunternehmer.“
+	3.	„Regelmäßig, vor allem bei großen Projekten.“
+	4.	„Selten, aber wenn, dann verzögert sich alles.“
+	5.	„Ich kann’s nicht genau sagen, aber es nervt manchmal gewaltig.“
+
+⸻
+
+5. Wenn der Bot den Termin anbietet:
+
+„Hätten Sie Interesse an einem kurzen Termin, um mögliche Einsatzszenarien und Konditionen durchzugehen?“
+
+Interessiert – Happy Path:
+	1.	„Ja, gerne! Wann würde es denn passen?“
+	2.	„Klingt gut. Können wir nächste Woche Montag sprechen?“
+	3.	„Auf jeden Fall. Lieber vor Ort oder telefonisch?“
+	4.	„Ja, ich hätte Interesse – ein Telefonat wäre super.“
+	5.	„Sehr gerne, ich habe am Dienstag Nachmittag Zeit.“
+
+Zögerlich / Detailfragen:
+	1.	„Vielleicht – was würde mich so ein Termin ungefähr kosten?“
+	2.	„Können Sie mir vorab eine Übersicht per Mail schicken?“
+	3.	„Ich bin nicht sicher, ob wir gerade Budget haben.“
+	4.	„Was genau besprechen wir denn in diesem Termin?“
+	5.	„Könnten Sie mir erst mal ein paar Referenzen nennen?“
+
+Ablehnend / Infowunsch:
+	1.	„Nein danke, aber schicken Sie mir bitte Ihre Unterlagen.“
+	2.	„Im Moment nicht, aber Infomappe könnten Sie senden.“
+	3.	„Ich möchte erst mal alles schriftlich haben.“
+	4.	„Kein Termin, lieber erstmal per Mail.“
+	5.	„Besser, Sie senden mir Ihre Leistungen per Mail.“
+
+⸻
+
+Mit diesen Varianten kannst Du den Bot in unterschiedlichen Szenarien testen – vom entspannten Gespräch bis zu kniffligen Einwänden und Detailfragen. Wenn Du daran etwas im Prompt anpassen möchtest, sag mir Bescheid, dann aktualisiere ich die Datei direkt.
