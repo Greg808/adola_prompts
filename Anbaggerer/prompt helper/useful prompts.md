@@ -1,6 +1,6 @@
 # Useful Prompts
 
-## prompt to genarate test data for a prompt 
+## prompt to genarate test data for an outbound prompt 
 
 **Hinweis:** Es handelt sich um **Outbound-Kaltakquise-Telefonate**, bei denen der Bot das Gespräch initiiert.
 
