@@ -1,0 +1,538 @@
+# calls for testng
+
+## calls
+Hier sind 15 realistische Test-Telefonate auf Basis deiner geöffneten Prompt-Datei „Der Anbaggerer Kaltakquise Demo“, gruppiert nach Branch-Logik. Jedes enthält typische Gesprächsverläufe mit 8–14 Wechseln – inklusive Happy Paths, Rückfragen und problematischen Verläufen:
+
+⸻
+
+🟢 1. Neukunden-Allgemein (Happy Path + Termin) ✅ 
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer aus Graz. Wie löst ihr aktuell das Thema Erdarbeiten bei euren Projekten?
+User: Wir vergeben das meistens an Subunternehmer.
+Bot: Was wäre euch bei einem Dienstleister besonders wichtig – Flexibilität, Schnelligkeit oder Verlässlichkeit?
+User: Schnelligkeit ist für uns ausschlaggebend.
+Bot: Welche Erfahrungen habt ihr bisher mit Subunternehmern gemacht?
+User: Teils, teils. Manchmal gibt’s Verzögerungen.
+Bot: Unsere regionale Nähe ermöglicht Reaktionszeiten oft innerhalb von 24 Stunden vor Ort.
+Bot: Hättet ihr Interesse an einem kurzen Gespräch, um Einsatzszenarien zu besprechen?
+User: Ja, gerne telefonisch.
+Bot: Wann soll ich mich telefonisch wieder bei euch melden?
+User: Nächsten Mittwoch um 10 Uhr.
+Bot: Perfekt, ich notiere Mittwoch, 10:00 Uhr. Vielen Dank für das Gespräch!
+Bot: <end_call>
+
+⸻
+
+🟡 2. Neukunden-Allgemein (Infomappe statt Termin) ✅ 
+
+Bot: …Wie löst ihr aktuell das Thema Erdarbeiten…
+User: Wir haben derzeit keinen akuten Bedarf.
+Bot: Verstehe. Was wäre euch bei einem externen Dienstleister besonders wichtig?
+User: Vor allem Verlässlichkeit.
+Bot: Ich verstehe. Ich kann euch gerne eine Infomappe zuschicken.
+User: Ja, das wäre super.
+Bot: Gerne! Ist es okay, wenn ich in drei Wochen nochmal nachfrage?
+User: Klar, passt.
+Bot: Danke, ich sende die Unterlagen sofort.
+Bot: <end_call>
+
+⸻
+
+🔴 3. Abbruch-/Fallback (klassischer Einwand) ✅
+
+Bot: …Wie löst ihr aktuell das Thema Erdarbeiten…
+User: Kein Interesse, danke.
+Bot: Schade. Darf ich Ihnen trotzdem eine Infomappe schicken?
+User: Nein, danke.
+Bot: Verstehe. Vielen Dank und einen erfolgreichen Tag!
+Bot: <end_call>
+
+⸻
+
+🔄 4. Einwand-Handling (Preis zu hoch) ✅
+
+Bot: …Wie löst ihr aktuell das Thema Erdarbeiten…
+User: Ich kenn eure Preise – viel zu teuer.
+Bot: Ich verstehe, dass Ihnen der Preis wichtig ist.
+Bot: Darf ich fragen, welches Budget Sie üblicherweise einplanen?
+User: Maximal 60 €/h.
+Bot: Für größere Projekte bieten wir Sonderkonditionen.
+Bot: Wollen wir dazu kurz telefonieren?
+User: Nein, aktuell nicht.
+Bot: Ich schicke Ihnen gerne eine Infomappe.
+User: Okay.
+Bot: Ich melde mich in zwei Wochen nochmal.
+Bot: <end_call>
+
+⸻
+
+🔍 5. Technische/Detail-Fragen (intensiv)  ✅
+
+Bot: …Wie löst ihr aktuell das Thema Erdarbeiten…
+User: Was kostet ein Poolaushub?
+Bot: Das liegt je nach Größe bei €3.000 bis €6.000.
+User: Wie schnell seid ihr verfügbar?
+Bot: Meist innerhalb von 24 Stunden.
+User: Und Anfahrt?
+Bot: Wird je nach Entfernung berechnet.
+User: Was genau bietet ihr an?
+Bot: Erdarbeiten, Steinmauerbau, Transport mit LKW etc.
+Bot: Wollen wir Details telefonisch besprechen?
+User: Ja, gerne.
+Bot: Welcher Termin passt Ihnen nächste Woche?
+User: Dienstag, 15 Uhr.
+Bot: Super, eingetragen!
+Bot: <end_call>
+
+⸻
+
+💬 6. Bestandskunde (positiv)  ✅
+
+Bot: …Wie lösen Sie aktuell das Thema Erdarbeiten…
+User: Wir arbeiten eh mit euch zusammen.
+Bot: Schön zu hören! Wie zufrieden sind Sie aktuell?
+User: Sehr.
+Bot: Das freut mich. Möchten Sie ein kurzes Gespräch für neue Projekte?
+User: Ja, nächste Woche gerne.
+Bot: Telefonisch oder vor Ort?
+User: Telefonisch.
+Bot: Wann passt es Ihnen?
+User: Donnerstag um 9.
+Bot: Perfekt, ich melde mich dann!
+Bot: <end_call>
+
+⸻
+
+❗ 7. Bestandskunde (neutral + kein Termin) ✅
+
+User: Wir arbeiten mit euch.
+Bot: Wie läuft die Zusammenarbeit?
+User: Ganz okay.
+Bot: Gibt’s etwas, das wir verbessern können?
+User: Besser erreichbar sein.
+Bot: Danke für den Hinweis, ich geb das weiter.
+Bot: Ich notiere das und melde mich mit Vorschlag.
+Bot: <end_call>
+
+⸻
+
+🔗 8. Partner-Branch (offen) ✅
+
+User: Wir haben schon wen.
+Bot: Wie läuft die Zusammenarbeit bisher?
+User: Meist gut, aber oft lange Wartezeiten.
+Bot: Genau hier setzen wir an – schnellere Reaktion und transparente Preise.
+Bot: Wäre ein Gespräch für Sie interessant?
+User: Ja.
+Bot: Vor Ort oder telefonisch?
+User: Vor Ort.
+Bot: Wann passt es Ihnen?
+User: Freitag, 13 Uhr.
+Bot: Perfekt, ich bin eingetragen.
+Bot: <end_call>
+
+⸻
+
+🧱 9. Selbst-Branch (typisch) ✅
+
+User: Machen wir alles selbst.
+Bot: Welche Maschinen setzen Sie dafür ein?
+User: Zwei Bagger, ein LKW.
+Bot: Gibt’s Verzögerungen oder Engpässe?
+User: Im Frühling immer wieder.
+Bot: Genau da helfen wir spontan.
+Bot: Wollen Sie Einsatzmöglichkeiten besprechen?
+User: Nein, eher nicht.
+Bot: Darf ich Ihnen eine Infomappe senden?
+User: Ja, gerne.
+Bot: In drei Wochen melde ich mich nochmal.
+Bot: <end_call>
+
+⸻
+
+🔁 10. Selbst-Branch (Rückfrage & Termin) ✅
+
+User: Haben eigene Maschinen.
+Bot: Welche genau?
+User: Bagger bis 3,5 t, Lader.
+Bot: Kommt’s mal zu Verzögerungen?
+User: Ja, wenn Personal fehlt.
+Bot: Hier springen wir kurzfristig ein.
+Bot: Termin für Detailbesprechung?
+User: Gerne telefonisch.
+Bot: Wann passt’s?
+User: Montag 16 Uhr.
+Bot: Eingetragen, danke!
+Bot: <end_call>
+
+⸻
+
+⚠️ 11. Unklare Antwort + Fallback  ✅
+
+Bot: …Wie lösen Sie Erdarbeiten?
+User: Joa, wie man’s halt macht.
+Bot: Entschuldigung, könnten Sie das etwas genauer sagen?
+User: Haben eine Firma.
+Bot: Meinen Sie eine externe oder intern?
+User: Eine eigene.
+Bot: Also intern – welche Maschinen verwenden Sie?
+User: Bagger und Radlader.
+Bot: Gibt’s Engpässe?
+User: Ja, manchmal.
+Bot: Möchten Sie das telefonisch besprechen?
+User: Später.
+Bot: Ich sende Ihnen eine Infomappe. Nachfassen in drei Wochen?
+User: Passt.
+Bot: <end_call>
+
+⸻
+
+🧾 12. Sofort-Infowunsch (Erkennung) ✅
+
+User: Können Sie mir bitte einfach ein Datenblatt mailen?
+Bot: Gerne! Ich schicke Ihnen die Unterlagen sofort.
+Bot: Ist es okay, wenn ich in drei Wochen nochmal nachfrage?
+User: Ja.
+Bot: Danke – dann bis bald.
+Bot: <end_call>
+
+⸻
+
+💸 13. Budget/Preis (kritisch) ✅
+
+User: Was kostet bei euch ein 2,5 t Bagger?
+Bot: € 69 pro Stunde inkl. Fahrer.
+User: Und Anfahrt?
+Bot: Pauschal € X bis Y km.
+User: Klingt teuer.
+Bot: Ab 8 Stunden gibt’s 10 % Rabatt.
+User: Okay, klingt besser.
+Bot: Wollen wir einen Termin dazu vereinbaren?
+User: Nein, nur Info vorerst.
+Bot: Ich sende Ihnen die Preisliste.
+Bot: Darf ich in zwei Wochen nachfassen?
+User: Ja.
+Bot: <end_call>
+
+⸻
+
+🔄 14. Preis + Detail kombiniert ✅
+
+User: Was kostet ein Poolaushub + Entsorgung?
+Bot: Zwischen € 3.000 und € 6.000.
+User: Wie schnell verfügbar?
+Bot: Innerhalb von 24 Stunden.
+User: Anfahrtskosten?
+Bot: Nach Aufwand.
+User: Können wir das besprechen?
+Bot: Klar. Telefonat oder Vor-Ort-Termin?
+User: Telefonat.
+Bot: Wann passt es?
+User: Mittwoch, 11 Uhr.
+Bot: Eingetragen!
+Bot: <end_call>
+
+⸻
+
+🧩 15. Edge Case: Mischantwort + Korrektur ✅
+
+User: Wir machen selbst, aber leihen manchmal Maschinen.
+Bot: Welche Kapazitäten setzen Sie aktuell ein?
+User: 2 Bagger, aber kein Personal. 
+Bot: Bei Engpässen können wir Personal stellen.
+Bot: Wollen Sie Einsatzmöglichkeiten besprechen?
+User: Hmmm… später vielleicht.
+Bot: Kein Problem. Ich sende Ihnen vorerst eine Infomappe.
+Bot: In drei Wochen ein kurzer Rückruf?
+User: Ja, passt.
+Bot: <end_call>
+
+⸻
+## More calls:
+
+1. Neukunden-Allgemein-Branch ✅
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer aus Graz. Ich hab gesehen, dass ihr ebenfalls in der Baubranche aktiv seid – wie regelt ihr aktuell das Thema Erdarbeiten oder Baggerleistungen bei euren Projekten?
+User: Je nach Projekt unterschiedlich – manchmal machen’s Partnerfirmen vom Generalunternehmer, manchmal organisieren wir was.
+Bot: Verstehe. Und wenn ihr selbst organisiert – was ist euch bei einem externen Dienstleister besonders wichtig: Flexibilität, Schnelligkeit oder Verlässlichkeit?
+User: Schnelligkeit und gute Kommunikation.
+Bot: Danke – genau da setzen wir an: Wir liefern kurzfristig Maschinen und Fahrer, damit ihr nicht auf Verfügbarkeiten warten müsst.
+Bot: Kommt’s bei euch manchmal vor, dass’s eng wird oder ihr spontan jemanden braucht?
+User: Ja, ist uns schon öfter passiert.
+Bot: Wäre es für euch grundsätzlich interessant, das mal in einem kurzen Gespräch durchzugehen – vielleicht für künftige Engpässe oder größere Projekte?
+User: Ja, gerne.
+Bot: Super! Was wäre euch lieber – ein Vor-Ort-Termin oder ein Telefongespräch?
+User: Lieber telefonisch.
+Bot: Wann passt es euch am besten?
+User: Am Montag um 14 Uhr.
+Bot: Perfekt, ich trag Montag, 14:00 Uhr ein. Ich freu mich auf das Gespräch!
+User: Ich mich auch.
+Bot: <end_call>
+
+
+---
+2. Technische/Detail-Branch ✅
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer aus Graz. Ich wollte fragen: Wie lösen Sie aktuell das Thema Erdarbeiten bei Ihren Projekten?
+User: Was bieten Sie denn konkret an?
+Bot: Sie möchten wissen, welche Leistungen wir anbieten. Wir bieten an: Erdarbeiten und Aushub, Steinmauerbau, Poolbau inkl. Entsorgung sowie Transporte mit Dreiachs-LKW und Greifkran.
+User: Wie schnell wären Sie im Fall eines Einsatzes verfügbar?
+Bot: Unsere Anfahrt erfolgt meist innerhalb von 24 Stunden.
+User: Was kostet das ungefähr für einen Poolaushub?
+Bot: Poolaushub inklusive Entsorgung bewegt sich je nach Beckengröße zwischen € 3.000 und € 6.000.
+User: Können Sie mir das bitte zuschicken?
+Bot: Ich sende Ihnen die technischen Daten und Referenzen per E-Mail. Darf ich in einer Woche nachfassen?
+User: Ja, passt.
+Bot: Perfekt – dann melde ich mich nächste Woche noch einmal kurz. Vielen Dank für das Gespräch!
+User: Danke ebenso.
+Bot: <end_call>
+
+⸻
+
+3. Einwand-Handling-Branch
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Darf ich fragen, wie Sie Erdarbeiten aktuell lösen?
+User: Wir brauchen nichts – ist zu teuer.
+Bot: Sie finden unsere Leistungen zu teuer. Ich verstehe, dass Ihnen der Preis wichtig ist.
+User: Ja, wir haben aktuell kaum Budget.
+Bot: Darf ich fragen, welches Budget Sie für Erdarbeiten üblicherweise einplanen?
+User: Unter 1.000 Euro, wenn möglich.
+Bot: Unsere schnelle Verfügbarkeit hilft Ihnen, unerwartete Engpässe zu vermeiden und spart langfristig Kosten.
+User: Trotzdem eher uninteressant im Moment.
+Bot: Ich schicke Ihnen gerne eine Infomappe mit unseren Leistungen und Referenzen. Darf ich Sie in zwei Wochen noch einmal kurz kontaktieren, um nachzufassen?
+User: Von mir aus.
+Bot: Ich sende Ihnen die Unterlagen zu und melde mich wie besprochen. Vielen Dank für Ihre Zeit!
+User: Danke.
+Bot: <end_call>
+
+⸻
+
+4. Abbruch-/Fallback-Branch
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Ich wollte fragen: Wie lösen Sie aktuell das Thema Erdarbeiten bei Ihren Bauprojekten?
+User: Kein Interesse.
+Bot: Schade, dass es diesmal nicht passt. Darf ich Ihnen trotzdem eine Infomappe mit unseren Leistungen und Referenzen zusenden?
+User: Nein, danke.
+Bot: Verstehe, ich beende das Gespräch dann hier. Vielen Dank für Ihre Zeit und einen erfolgreichen Tag!
+User: Wiederhören.
+Bot: <end_call>
+
+⸻
+
+5. Selbst-Branch
+
+Bot: Guten Tag, Hans vom Anbaggerer. Ich hab gesehen, dass ihr regional in der Baubranche tätig seid. Wie regelt ihr aktuell das Thema Erdarbeiten?
+User: Das machen wir selbst.
+Bot: Sie führen die Erdarbeiten intern durch. Welche Maschinen und Kapazitäten setzen Sie dafür aktuell ein?
+User: Wir haben zwei Bagger und einen Radlader.
+Bot: Gibt es Phasen, in denen Sie Engpässe oder Verzögerungen erleben?
+User: Ja, im Sommer wird’s oft knapp.
+Bot: Wie oft kommt es vor, dass Sie externe Unterstützung benötigen würden, aber nicht schnell genug fündig werden?
+User: Immer wieder mal.
+Bot: Gerade wenn es einmal eng wird, bieten wir kurzfristig Maschinen und Personal, sodass Sie Ihre Projekte termingerecht abschließen können.
+User: Klingt gut.
+Bot: Perfekt! Was wäre Ihnen lieber – ein Vor-Ort-Termin oder ein Telefongespräch?
+User: Vor Ort wäre super.
+Bot: Welcher Tag passt Ihnen nächste Woche für einen Vor-Ort-Termin?
+User: Mittwoch, 9:00 Uhr.
+Bot: Perfekt, ich habe den Termin für Mittwoch um 9:00 Uhr notiert. Ich freue mich auf das Gespräch!
+User: Super, danke!
+Bot: <end_call>
+
+⸻
+
+6. Neukunden-Allgemein-Branch (Variante mit Missverständnis)
+
+Bot: Guten Tag, Hans vom Anbaggerer. Wie regeln Sie aktuell das Thema Baggerarbeiten bei Ihren Bauprojekten?
+User: Was wollen Sie genau verkaufen?
+Bot: Ich wollte mich erkundigen, wie Sie Erdarbeiten aktuell lösen – ob intern, mit Partnerfirmen oder externen Dienstleistern?
+User: Wir haben jemanden, aber das läuft nicht immer gut.
+Bot: Verstehe. Was wäre Ihnen bei einem externen Dienstleister besonders wichtig – Flexibilität, Schnelligkeit oder Verlässlichkeit?
+User: Schnelligkeit ist uns am wichtigsten.
+Bot: Unsere regionale Nähe ermöglicht Reaktionszeiten oft innerhalb von 24 Stunden vor Ort.
+User: Und was kostet das?
+Bot: Ein 2,5-Tonnen-Bagger mit Fahrer kostet € 69 pro Stunde. Anfahrt je nach Entfernung pauschal oder individuell.
+User: Hm… können Sie mir Infos schicken?
+Bot: Gerne. Ich sende Ihnen die Infomappe gleich zu. Ist es für Sie in Ordnung, wenn ich mich in etwa drei Wochen kurz melde, um nachzufragen?
+User: Ja, bitte.
+Bot: Ich sende Ihnen die Infomappe und melde mich wie besprochen. Gibt es sonst noch etwas, das ich für Sie tun kann?
+User: Nein, danke.
+Bot: <end_call>
+
+---
+
+
+⸻
+
+7. Bestandskunden-Branch (neutral, keine Gesprächsabsicht)
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Ich wollte fragen: Wie läuft die Zusammenarbeit mit uns aktuell?
+User: Ganz okay soweit.
+Bot: Gibt es Punkte, bei denen Sie sich Verbesserungen wünschen?
+User: Ja, die Erreichbarkeit könnte besser sein.
+Bot: Danke für die Rückmeldung – ich gebe das an unser Team weiter.
+User: Gerne.
+Bot: Möchten Sie in den nächsten Wochen neue Projekte mit uns besprechen?
+User: Im Moment haben wir nichts Konkretes geplant.
+Bot: Ich notiere das – bei Bedarf sind wir natürlich jederzeit verfügbar.
+User: Passt.
+Bot: Danke für das offene Feedback und einen erfolgreichen Tag!
+User: Danke, ebenso.
+Bot: <end_call>
+
+⸻
+
+8. Selbst-Branch (abweichend, mit Nachfrage)
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Ich wollte fragen, wie Sie das Thema Erdarbeiten aktuell lösen?
+User: Wir machen das selbst, aber manchmal fehlen Leute.
+Bot: Sie setzen eigene Maschinen ein – dürfen wir in Personal-Engpass-Situationen unterstützen?
+User: Kommt drauf an.
+Bot: Welche Maschinen nutzen Sie derzeit im Einsatz?
+User: Zwei Bagger, aber kein eigener LKW.
+Bot: Bei Transporten können wir mit Dreiachser-LKW und Greifkran flexibel helfen.
+User: Was kostet das?
+Bot: Ab € 75 pro Stunde, je nach Einsatzort.
+User: Können Sie mir das mailen?
+Bot: Gerne. Darf ich mich in zwei Wochen nochmals bei Ihnen melden?
+User: Ja, passt.
+Bot: Ich sende Ihnen die Unterlagen zu. Danke für das Gespräch!
+User: Danke, ebenso.
+Bot: <end_call>
+
+⸻
+
+9. Selbst-Branch (typisch, ohne konkreten Bedarf)
+
+Bot: Hallo, Hans vom Anbaggerer. Ich wollte fragen, wie ihr Erdarbeiten bei euren Bauprojekten aktuell organisiert?
+User: Wir machen alles mit eigenem Fuhrpark.
+Bot: Verstehe. Welche Maschinen setzen Sie ein?
+User: 3-Tonnen-Bagger, Lader, Dumper.
+Bot: Gibt es Engpässe oder saisonale Spitzenzeiten?
+User: Im Frühjahr meist.
+Bot: Gerade dann unterstützen wir mit Personal und Maschinen – kurzfristig und flexibel.
+User: Derzeit brauchen wir nix.
+Bot: Darf ich Ihnen eine Infomappe mit Leistungen und Preisen zusenden?
+User: Ja, gerne.
+Bot: Super – darf ich in drei Wochen nochmals anrufen, um nachzufragen?
+User: Ja, bitte.
+Bot: Vielen Dank, die Unterlagen sind unterwegs.
+User: Alles klar.
+Bot: <end_call>
+
+⸻
+
+10. Budget-/Preis-Branch (kritisch hinterfragend)
+
+Bot: Grüß Gott, Hans vom Anbaggerer. Ich wollte fragen, wie Sie aktuell Erdarbeiten lösen?
+User: Kommt drauf an – was kostet bei Ihnen ein Bagger?
+Bot: Ein 2,5-Tonnen-Bagger mit Fahrer kostet € 69 pro Stunde.
+User: Und was ist mit der Anfahrt?
+Bot: Pauschal ab € 45 je nach Entfernung.
+User: Ist mir ehrlich gesagt zu teuer.
+Bot: Ab 8 Stunden bieten wir 10 % Rabatt. Für Stammkunden gibt’s individuelle Konditionen.
+User: Können Sie mir da ein Beispiel schicken?
+Bot: Ja, ich sende Ihnen eine aktuelle Preisliste.
+User: Machen Sie.
+Bot: Ich melde mich in zwei Wochen nochmal kurz.
+User: Okay.
+Bot: Danke für Ihre Zeit!
+User: Gerne.
+Bot: <end_call>
+
+⸻
+
+11. Partner-Branch (Abgrenzung zu anderem Anbieter)
+
+Bot: Hallo, Hans von der Anbaggerer. Ich wollte fragen, wie Sie aktuell Erdarbeiten organisieren?
+User: Wir arbeiten da mit einer Firma zusammen.
+Bot: Wie läuft die Zusammenarbeit bisher?
+User: Eigentlich ganz gut, aber die brauchen oft lange.
+Bot: Genau hier setzen wir an – mit kurzfristiger Verfügbarkeit und transparenten Preisen.
+User: Klingt interessant.
+Bot: Wäre ein unverbindliches Gespräch dazu für Sie spannend?
+User: Ja, warum nicht.
+Bot: Was wäre Ihnen lieber – vor Ort oder telefonisch?
+User: Vor Ort.
+Bot: Welcher Tag passt Ihnen nächste Woche?
+User: Freitag um 14 Uhr.
+Bot: Eingetragen – danke, ich freue mich auf das Gespräch!
+User: Ich auch.
+Bot: <end_call>
+
+⸻
+
+
+⸻
+
+12. Sofort-Infowunsch (Erkennung)
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Ich wollte fragen, wie Sie aktuell Erdarbeiten lösen?
+User: Können Sie mir bitte einfach ein Datenblatt mailen?
+Bot: Gerne! Ich schicke Ihnen die Unterlagen sofort.
+User: Danke.
+Bot: Ist es okay, wenn ich in drei Wochen nochmal nachfrage?
+User: Ja.
+Bot: Danke – dann bis bald.
+User: Alles klar.
+Bot: <end_call>
+
+⸻
+
+13. Budget-/Preis-Branch (kritisch)
+
+Bot: Guten Tag, Hans von der Anbaggerer. Wie regeln Sie aktuell das Thema Erdarbeiten?
+User: Was kostet bei euch ein 2,5 t Bagger?
+Bot: € 69 pro Stunde inklusive Fahrer.
+User: Und Anfahrt?
+Bot: Pauschal € 45–65, abhängig von der Entfernung.
+User: Klingt teuer.
+Bot: Ab 8 Stunden gibt’s 10 % Rabatt, und Stammkunden erhalten Sonderkonditionen.
+User: Okay, klingt besser.
+Bot: Wollen wir einen Termin zur Detailbesprechung vereinbaren?
+User: Nein, nur Info vorerst.
+Bot: Ich sende Ihnen die Preisliste. Darf ich in zwei Wochen nachfassen?
+User: Ja.
+Bot: <end_call>
+
+⸻
+
+14. Preis + Detail kombiniert
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Wie lösen Sie aktuell Erdarbeiten?
+User: Was kostet ein Poolaushub inkl. Entsorgung?
+Bot: Zwischen € 3.000 und € 6.000 – abhängig von Größe und Bodenbeschaffenheit.
+User: Wie schnell seid ihr verfügbar?
+Bot: Meist innerhalb von 24 Stunden.
+User: Und die Anfahrtskosten?
+Bot: Werden nach Aufwand je nach Einsatzort berechnet.
+User: Können wir das besprechen?
+Bot: Klar – telefonisch oder vor Ort?
+User: Telefonat.
+Bot: Wann passt es Ihnen?
+User: Mittwoch, 11 Uhr.
+Bot: Eingetragen! Ich rufe Sie am Mittwoch um 11:00 Uhr an.
+User: Danke!
+Bot: <end_call>
+
+⸻
+
+15. Edge Case: Mischantwort + Korrektur
+
+Bot: Guten Tag, mein Name ist Hans von der Anbaggerer. Wie lösen Sie aktuell das Thema Erdarbeiten?
+User: Wir machen selbst, aber leihen manchmal Maschinen.
+Bot: Welche Kapazitäten setzen Sie aktuell ein?
+User: Zwei Bagger, aber kein eigenes Personal.
+Bot: Bei Personal-Engpässen können wir unterstützen – kurzfristig und regional.
+User: Hmmm… später vielleicht.
+Bot: Kein Problem. Ich sende Ihnen vorerst eine Infomappe.
+User: Okay.
+Bot: In drei Wochen ein kurzer Rückruf zur Rückfrage?
+User: Ja, passt.
+Bot: Danke für Ihre Zeit!
+User: Bitte gern.
+Bot: <end_call>
+
+⸻
+
+
