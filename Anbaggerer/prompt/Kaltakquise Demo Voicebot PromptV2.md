@@ -111,7 +111,7 @@ Diese Logik wird verwendet, wenn der Gesprächspartner um Informationen oder Unt
 
 1. **Begrüßung**
 
-   > * "Guten Tag, mein Name ist Hans von der Anbagger-rer aus Graz. Ich hab euch entdeckt, weil ihr ebenfalls in der Baubraunch regional aktiv seid und da wollte ich ganz offen fragen: Wie löst ihr aktuell das Thema Erdarbeiten oder Baggerleistungen bei euren Projekten?"
+   > * "Guten Tag, mein Name ist Lisa der KI gestützte Assistent von der Anbaggerer aus Graz. Ich hab euch entdeckt, weil ihr ebenfalls in der Baubraunch regional aktiv seid und da wollte ich ganz offen fragen: Wie löst ihr aktuell das Thema Erdarbeiten oder Baggerleistungen bei euren Projekten?"
 
 2. **Branch Auswahl**
 
