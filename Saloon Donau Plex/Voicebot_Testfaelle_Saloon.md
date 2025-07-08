@@ -2,30 +2,30 @@
 
 | Testfall                                | Erwartetes Verhalten                                                        |ok         |nok     |
 |:----------------------------------------|:----------------------------------------------------------------------------|:----------|:-------|
-| Reservierung für 2 am Freitag um 19 Uhr | Reservierung wird korrekt angenommen und bestätigt.                         | ja        |        |
-| Mittwochsreservierung um 12:30          | Reservierung wird korrekt angenommen und bestätigt.                         | ja        |        |
-| Reservierung für 4 am Samstagabend      | Reservierung wird korrekt angenommen und bestätigt.                         | ja        |        |
-| Reservierung für 20. Juli um 18 Uhr     | Reservierung wird korrekt angenommen und bestätigt.                         | ja        |        | 
-| Öffnungszeiten unter der Woche          | Öffnungszeiten Mo–Do werden korrekt genannt.                                | ja        |        |
-| Sonntags geöffnet?                      | Öffnungszeiten für Sonntag werden korrekt genannt.                          | ja        |        |
-| Küchenschluss Samstag                   | Küchenschluss (23:00 Uhr) wird korrekt genannt.                             | ja        |        | 
-| Preis Cheesecake                        | Preis (6,90 €) wird korrekt genannt.                                        | ja        |        |
-| Vegetarisches Gericht                   | Vegetarische Optionen werden genannt oder auf vollständige Karte verwiesen. | ja        |        |
-| Crazy Chicken Salat Inhalt              | Beschreibung des Gerichts wird korrekt genannt.                             | ja        |        |
-| Preis Filetsteak                        | Preis (36,90 €) wird korrekt genannt.                                       | ja        |        | 
-| Reservierung am 35. Juli                | Bot erkennt ungültiges Datum und bittet um Korrektur.                       | ja        |        |
-| Reservierung Dienstag 2 Uhr früh        | Bot erkennt unübliche Zeit außerhalb Öffnungszeiten.                        | ja        |        |
-| Reservierung für 15 Personen            | Bot bittet um schriftliche Anfrage per E-Mail.                              | ja        |        |
-| Mozzarella-Burger                       | Bot erkennt Gericht nicht und verweist auf gültige Karte.                   | ja        |        | 
-| Reservierung Sonntag 23:30              | Bot erklärt Küchenschluss um 22:00 und bietet alternative Zeit an.          | ja        |        | 
-| Reservierung Montag Mitternacht         | Bot erklärt Öffnungszeiten (Mo nicht geschlossen, aber Uhrzeit außerhalb).  | ja        |        | 
-| Reservierung für 10 telefonisch         | Bot bittet um E-Mail wegen Gruppenreservierung.                             | ja        |        |
-| Kontakt via WhatsApp                    | Bot erklärt verfügbare Kontaktwege (Telefon, E-Mail).                       | ja        |        |
-| Speisekarte zum Download                | Bot erklärt, dass vollständige Karte im Restaurant verfügbar ist.           | ja        |        |
-| Frage zu Gutscheinen                    | Bot erklärt, dass dies außerhalb des Aufgabenspektrums liegt.               | ja        |        |
-| Frage zu Catering                       | Bot erklärt, dass dies nicht im Aufgabenspektrum liegt.                     | ja        |        |
-| Was gibt’s bei euch alles?              | Bot nennt Menüauszug oder verweist auf vollständige Karte.                  | ja        |        | 
-| Was hast du gerade gesagt?              | Bot wiederholt höflich die letzte Aussage.                                  | ja        |        | 
+| Reservierung für 2 am Freitag um 19 Uhr | Reservierung wird korrekt angenommen und bestätigt.                         |           |        |
+| Mittwochsreservierung um 12:30          | Reservierung wird korrekt angenommen und bestätigt.                         |           |        |
+| Reservierung für 4 am Samstagabend      | Reservierung wird korrekt angenommen und bestätigt.                         |           |        |
+| Reservierung für 20. Juli um 18 Uhr     | Reservierung wird korrekt angenommen und bestätigt.                         |           |        | 
+| Öffnungszeiten unter der Woche          | Öffnungszeiten Mo–Do werden korrekt genannt.                                |           |        |
+| Sonntags geöffnet?                      | Öffnungszeiten für Sonntag werden korrekt genannt.                          |ja         |        |
+| Küchenschluss Samstag                   | Küchenschluss (23:00 Uhr) wird korrekt genannt.                             |ja         |        | 
+| Preis Cheesecake                        | Preis (6,90 €) wird korrekt genannt.                                        |ja         |        |
+| Vegetarisches Gericht                   | Vegetarische Optionen werden genannt oder auf vollständige Karte verwiesen. |ja         |        |
+| Crazy Chicken Salat Inhalt              | Beschreibung des Gerichts wird korrekt genannt.                             |           |        |
+| Preis Filetsteak                        | Preis (36,90 €) wird korrekt genannt.                                       |           |        | 
+| Reservierung am 35. Juli                | Bot erkennt ungültiges Datum und bittet um Korrektur.                       |           |        |
+| Reservierung Dienstag 2 Uhr früh        | Bot erkennt unübliche Zeit außerhalb Öffnungszeiten.                        |           |        |
+| Reservierung für 15 Personen            | Bot bittet um schriftliche Anfrage per E-Mail.                              |           |        |
+| Mozzarella-Burger                       | Bot erkennt Gericht nicht und verweist auf gültige Karte.                   |           |        | 
+| Reservierung Sonntag 23:30              | Bot erklärt Küchenschluss um 22:00 und bietet alternative Zeit an.          |           |        | 
+| Reservierung Montag Mitternacht         | Bot erklärt Öffnungszeiten (Mo nicht geschlossen, aber Uhrzeit außerhalb).  |           |        | 
+| Reservierung für 10 telefonisch         | Bot bittet um E-Mail wegen Gruppenreservierung.                             |           |        |
+| Kontakt via WhatsApp                    | Bot erklärt verfügbare Kontaktwege (Telefon, E-Mail).                       |           |        |
+| Speisekarte zum Download                | Bot erklärt, dass vollständige Karte im Restaurant verfügbar ist.           |           |        |
+| Frage zu Gutscheinen                    | Bot erklärt, dass dies außerhalb des Aufgabenspektrums liegt.               |           |        |
+| Frage zu Catering                       | Bot erklärt, dass dies nicht im Aufgabenspektrum liegt.                     |           |        |
+| Was gibt’s bei euch alles?              | Bot nennt Menüauszug oder verweist auf vollständige Karte.                  |           |        | 
+| Was hast du gerade gesagt?              | Bot wiederholt höflich die letzte Aussage.                                  |           |        | 
 | Reservierung Do 18:00 für 2             | Reservierung wird korrekt angenommen und bestätigt.                         |           |        |
 | Feiertag geöffnet?                      | Bot nennt korrekte Info zu Feiertagsöffnungszeiten oder verweist Website.   |           |        |
 | Beliebtestes Gericht?                   | Bot nennt ein beliebtes Gericht oder verweist auf Empfehlungen.             |           |        |
