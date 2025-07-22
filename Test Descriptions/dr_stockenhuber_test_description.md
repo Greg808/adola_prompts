@@ -4,30 +4,33 @@
 
 ### Test Objective
 
-Ensure that the bot greets the caller politely and answers a basic medical question clearly.
+Verify that the Voicebot greets the user by name (“Lisa”), introduces her association with the internal medicine practice (“Dr. Stockenhuber”), and correctly provides the opening hours when asked.
 
 ---
 
-### 1. Greeting Recognition
+### 1. Greeting Recognition  
+- Verify that the Voicebot introduces herself as “Lisa” from Dr. Stockenhuber’s internal medicine practice.  
+- Confirm that the Voicebot offers assistance with appointment scheduling or medical questions.
 
-* Simulate a call without user input.
-* Verify that the bot introduces himself as a digital assistant of Dr. Stockenhuber's internal medicine practice.
-* Confirm that it offers help with medical questions or appointment scheduling.
-
-**Expected example response:**
-„Willkommen bei der internistischen Praxis von Doktor Stockenhuber. Ich bin Ihr digitaler KI-Assistent und helfe Ihnen gerne weiter. Sie können mir medizinische Fragen stellen oder einen Termin vereinbaren. Wie kann ich Ihnen helfen?“
+**Expected example response:**  
+„Willkommen bei der internistischen Praxis von Doktor Stockenhuber. Ich bin Lisa, Ihre digitale Assistentin, und helfe Ihnen gerne bei medizinischen Fragen oder bei der Terminvereinbarung. Wie kann ich Ihnen helfen?“
 
 ---
 
-### 2. Basic Medical FAQ
+### 2. Opening Hours Request  
+- Use this expected opening schedule for validation:
+  - Monday: 08:30–19:00
+  - Tuesday: 08:00–19:00
+  - Wednesday: 08:30–19:00
+  - Thursday: 08:00–20:00
+  - Friday: 09:00–13:00
 
-* User says: *„Was sind die Symptome eines Herzinfarkts?“*
-* The bot must respond with an appropriate, clear answer and recommend calling the emergency service if applicable.
+- Testbot asks the Voicebot:  
+  _„Wie sind eure Öffnungszeiten?“_  
+- Verify that the stated opening hours match the expected schedule.
 
-**Expected example response:**
-„Typische Symptome sind starke Brustschmerzen, die in den linken Arm oder den Kiefer ausstrahlen, Atemnot, Übelkeit und Kaltschweiß. Rufen Sie bei Verdacht sofort den Notruf 144 an.“
-
----
+**Expected example response:**  
+„Unsere Öffnungszeiten sind: Montag und Mittwoch von 08:30 bis 19:00 Uhr, Dienstag von 08:00 bis 19:00 Uhr, Donnerstag von 08:00 bis 20:00 Uhr und Freitag von 09:00 bis 13:00 Uhr.“
 
 ## Functional Test
 
@@ -39,7 +42,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 1. Appointment Offer
 
-* User says: *„Ich hätte gerne einen Termin.“*
+* Testbot says to the Voicebot: *„Ich hätte gerne einen Termin.“*
 * Bot must offer appointments for two days in the future at 15:00 or 16:00.
 
 **Expected example response:**
@@ -49,7 +52,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 2. Appointment Not Suitable
 
-* User says: *„Das passt mir nicht.“*
+* Testbot says to the Voicebot: *„Das passt mir nicht.“*
 * Bot must offer appointments for three days in the future at 9:00 or 11:00.
 
 **Expected example response:**
@@ -59,7 +62,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 3. Appointment Confirmation
 
-* User selects a time.
+* Testbot selects a time.
 * Bot must confirm the appointment with the selected time and include standard instructions.
 
 **Expected example response:**
@@ -78,7 +81,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 5. Closing After Appointment
 
-* User says: *„Nein, das war’s.“*
+* Testbot says to the Voicebot: *„Nein, das war’s.“*
 * Bot must deliver the appointment closing statement and end the call.
 
 **Expected example response:**
@@ -89,7 +92,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 6. Medical Question Only – Closing
 
-* User only asked a question, e.g.: *„Was tun bei Verdacht auf eine Lebensmittelvergiftung?“*
+* Testbot asks the Voicebot: *„Was tun bei Verdacht auf eine Lebensmittelvergiftung?“*
 * Bot must give the correct answer and follow with a medical disclaimer and appropriate closing.
 
 **Expected example response:**
@@ -100,7 +103,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 7. Name Usage Logic
 
-* User says: *„Mein Name ist Frau Bauer. Ich hätte gerne einen Termin.“*
+* Testbot says to the Voicebot: *„Mein Name ist Frau Bauer. Ich hätte gerne einen Termin.“*
 * Bot must use the name naturally in follow-up sentences.
 
 **Expected example response:**
@@ -110,7 +113,7 @@ Ensure the bot can handle appointment scheduling logic, medical questions with c
 
 ### 8. Unclear Input Handling
 
-* User gives an unclear answer.
+* Testbot gives an unclear answer.
 * Bot must ask for clarification immediately.
 
 **Expected example response:**
