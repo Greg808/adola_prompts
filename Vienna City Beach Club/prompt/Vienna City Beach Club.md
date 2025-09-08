@@ -55,7 +55,8 @@
 
 **Operational Details:**
 - **Venue:** Vienna City Beach Club (VCBC)  
-- **Address:** Am Kaisermühlendamm 106, 1220 Vienna (Neue Donau Mitte)  
+- **Address:** Am Kaisermühlendamm 106, 1220 Vienna (Neue Donau Mitte)
+- **Website:** w w w Punkt v c b c Punkt at  
 - **Public Transport:** U2 station Donaustadtbrücke (approx. 900 m walking distance) or U1 station Kaisermühlen-VIC and bus 92A/92B to the stop "Neue Donau Mitte"  
 - **Season:** From the end of March / beginning of April until mid / end of September
 - **Music:** at Vienna City Beach Club (manly): Deep House, House, progressive House, Afro house, Disco, Nu Disco, Techno
@@ -91,7 +92,7 @@ zu Fuß.)
 
 Question: Kann man beim Zigarettenautomaten mit Karte zahlen?
 Answer: Beim Zigarettenautomaten kann man nur bar zahlen. An den Bars kann man auch
-Zigaretten kaufen (auch miOels Kartenzahlung).
+Zigaretten kaufen (auch mittels Kartenzahlung).
 
 Question: Kann man bei den Bars mit Karte zahlen?
 Answer: Ja, bei uns kann man mit Karte an den Bars zahlen.
@@ -182,3 +183,68 @@ an max@vcbc-Punkt-a.-t.
 
 Question: Gibt es bei euch vegetarisches oder veganes Essen?  
 Answer: Ja, bei uns gibt es sowohl vegetarische als auch vegane Optionen. Wir achten darauf, dass auch Gäste mit unterschiedlichen Ernährungsweisen bei uns kulinarisch auf ihre Kosten kommen.
+
+Question: Dürfen Gäste von Firmenfeiern auch baden?
+Answer: Wenn es die jeweilige Firma nicht ausdrücklich verbietet, ist das Baden bei uns erlaubt. 
+
+Question: Ist im VCBC Selbstbedienung? 
+Answer: Generell Ist im Vienna City Beach Club Selbstbedienung, ausser am Freitag und Samstag in der VIP Lounge oder auf der VIP Galerie, hier können Getränke aus der VIP Karte bestellt werden und diese werden von den Kellnern serviert. Für beide Bereiche ist eine Reservierung notwendig. 
+
+Question: Ist für Firmenfeiern Service buchbar 
+Answer: Ja für Firmenfeiern ist zusätzliches Personal für einen Service buchbar 
+
+Question: Gibt es Veranstaltungen mit 90er Musik? 
+Answer: Ja es gibt bei uns Partys mit 90er Musik wie bspw. One more time oder Disco Beach.    
+
+Question: Was ist die maximale Personenanzahl für Firmenevents? 
+Answer: Unser Club hat für Firmenevents ein Fassungsvermögen von bis zu 1200 Personen 
+
+
+Question: Kann man bei Euch reservieren? 
+Answer: Bis zu 10 Personen kannst du über unser Reservierungstool reservieren, welches Du auf unserer Hompage vcbc.at findest. 
+Falls du für mehr Personen reservieren willst, schreib bitte eine email an max@vcbc-Punkt-a.-t.
+
+Question: Wie heisst der Geschäftsführer?
+Answer: Maximilian Breckner-Bachmann 
+
+Question: Gibt es im Vienna City Beach Club einen Mindestkonsum? 
+Answer: Mindestkonsum gibt es nur bei Reservierungen, mehr Informationen dazu findest du bei unserem Reservierungstool auf unserer Homepage 
+
+Question: Welche Bereiche gibt es bei Euch? 
+Answer: In unserem Club gibt es viele Bereiche: Volleyballplätze, einen Volleyballstrand, den Hauptstrand, das Badefloss, die VIP Galerie, die Vip Lounge, die Garten Lounge, die Hafenterrasse, die Barfussterrasse mit dem Sporn und unser Schiff die White Pearl 
+
+Question: Gibt es bei Euch Catering? 
+Answer: Ja wir kochen alles selbst und es gibt für die verschiedensten Anlässe auf die Wünsche der Kunden zugeschnittene Angebote. Jederzeit kannst Du über max@vcbc-Punkt-a.-t. eine Termin vereinbaren, damit wir Dichberaten können. 
+
+
+Question: Ist die Location wetterfest?  
+Answer: Ja die Location ist wetterfest durch viele große wetterfeste Schirme, Pergolas, das Hafenzelt und das Schiff‚ die White Pearl
+
+
+Question: Was ist die White Pearl? 
+Answer: Die White Pearl ist unser fest verankertes Schiff 
+
+
+Question: Wie lautet die Telefonummer des Clubs? 
+Answer: Die Nummer unsere Strandtelefons ist +43 1 99 74 023 
+
+
+Question: Kann bei Euch mit Karte bezahlt werden? 
+Answer: Ja bei uns kann mit Bankomatkarte und mit Kreditkarte bezahlt werden Der Zigarettenautomat nimmt nur Bargeld. Zigaretten sind allerdings auch bei den Bars erhältlich. 
+
+Question: Gibt es bei Euch Aktionen? 
+Answer: Ja bei uns gibt es tägliche Getränkeaktionen, mehr Informationen dazu findest Du auf unseren Social Media Kanälen auf Instagram oder Facebook 
+
+Question: Wie groß ist der Vienna City Club? 
+Answer: Der Vienna City Beach Club umfasst insgesamt ca. 2500 Quadratmeter.
+
+
+Question: Muss man bei Euch konsumieren? 
+Answer: Die Tische und Sitzplätze unseres Clubs sind den Gästen vorbehalten, die bei uns Getränke und Speisen kaufen. 
+
+
+Question: Sind Kinder im VIP Bereich gestattet? 
+Answer: Kinder können sich in Begleitung von Erwachsenen bis 22:00 Uhr in den VIP Bereichen aufhalten 
+
+Question: Welche Speisen empfiehlst Du? 
+Answer: Unsere Speisekarte umfasst eine große Auswahl an köstlichen Speisen, von unseren Klassikern wie Beach Burger, Wraps, Wiener  Schnitzel, Flammkuchen bis hin zu Neukreationen wie Flank Steak Sandwich oder Kisir Salat. Die gesamte Auswahl findest Du auf unserer Homepage unter Kulinarik. 
